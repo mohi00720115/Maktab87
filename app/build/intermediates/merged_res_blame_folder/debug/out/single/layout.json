@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_geo_quiz.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\src\\main\\res\\layout\\activity_geo_quiz.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cheat.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\src\\main\\res\\layout\\activity_cheat.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]
