@@ -11,12 +11,11 @@ import androidx.lifecycle.Observer
 class MainActivity : AppCompatActivity() {
         private val observerAsli = Observable()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.d(TAG, "onCreate: ")
+        lifecycle.addObserver(observerAsli)     //اون آنپاز و آن رزوم در کلاس آبزرورم رو میاره اینجا فراخوانی می کنه و فعال میشه
 
         val obj1 = Observer("Mohsen")
         val obj2 = Observer("Pooriya")
@@ -27,23 +26,9 @@ class MainActivity : AppCompatActivity() {
         observerAsli.register(obj1)
         observerAsli.register(obj2)
         observerAsli.register(obj3)
-        observerAsli.iterateInNumberList()
 
 
     }
-
-    override fun onPause() {
-        Log.d(TAG, "onPause: ")
-        observerAsli.iterateInNumberList()
-        super.onPause()
-    }
-
-    override fun onResume() {
-        Log.d(TAG, "onResume: ")
-        super.onResume()
-    }
-
-
 
 
 }
