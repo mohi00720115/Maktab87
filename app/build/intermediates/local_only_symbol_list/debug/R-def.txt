@@ -7,6 +7,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable b
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id btn_cheat
@@ -15,12 +16,16 @@ id btn_false
 id btn_next
 id btn_prev
 id btn_true
+id container_view
 id tv_cheat
 id tv_quiz
 layout activity_cheat
 layout activity_geo_quiz
 layout activity_main
+layout fragment_first
+layout fragment_second
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string hello_blank_fragment
 style Theme.MohsenAkhlaghi_HW10_GeoQuiz

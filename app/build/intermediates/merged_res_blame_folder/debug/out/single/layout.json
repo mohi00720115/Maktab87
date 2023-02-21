@@ -1,7 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_geo_quiz.xml",
-        "source": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\src\\main\\res\\layout\\activity_geo_quiz.xml"
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\src\\main\\res\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\src\\main\\res\\layout\\fragment_first.xml"
     },
     {
         "merged": "C:\\Users\\user\\AndroidStudioProjects\\MohsenAkhlaghi_HW10_GeoQuiz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_cheat.xml",
