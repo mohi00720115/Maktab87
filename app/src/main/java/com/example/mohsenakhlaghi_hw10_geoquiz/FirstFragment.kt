@@ -39,7 +39,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         }
 
         binding.btnFalse.setOnClickListener {
-            firstViewModel.list[firstViewModel.questionNumber] = false.toString()
+            firstViewModel.userAnswerList[firstViewModel.questionNumber] = false.toString()
             if (firstViewModel.cheatStatus.status) {
                 Toast.makeText(requireContext(), "تقلب کردی",
                     Toast.LENGTH_SHORT).show()
@@ -57,7 +57,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         }
 
         binding.btnTrue.setOnClickListener {
-            firstViewModel.list[firstViewModel.questionNumber] = true.toString()
+            firstViewModel.userAnswerList[firstViewModel.questionNumber] = true.toString()
             if (firstViewModel.cheatStatus.status) {
                 Toast.makeText(requireContext(), "تقلب کردی و خنگی :)",
                     Toast.LENGTH_SHORT).show()
@@ -87,9 +87,9 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
     }
 
     fun lock () {
-        binding.btnCheat.isEnabled = firstViewModel.list[firstViewModel.questionNumber].isEmpty()
-        binding.btnFalse.isEnabled = firstViewModel.list[firstViewModel.questionNumber].isEmpty()
-        binding.btnTrue.isEnabled = firstViewModel.list[firstViewModel.questionNumber].isEmpty()
+        binding.btnCheat.isEnabled = firstViewModel.userAnswerList[firstViewModel.questionNumber].isEmpty()
+        binding.btnFalse.isEnabled = firstViewModel.userAnswerList[firstViewModel.questionNumber].isEmpty()
+        binding.btnTrue.isEnabled = firstViewModel.userAnswerList[firstViewModel.questionNumber].isEmpty()
         }
 
 }

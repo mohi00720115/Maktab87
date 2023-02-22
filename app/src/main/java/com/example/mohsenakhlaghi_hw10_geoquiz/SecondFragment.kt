@@ -18,6 +18,7 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
     private val secondViewModel: SecondViewModel by viewModels()
     private val obj : FirstViewModel by viewModels()
     var cheatStatus = status
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = DataBindingUtil.bind(view)!!            //باید بنویسیش

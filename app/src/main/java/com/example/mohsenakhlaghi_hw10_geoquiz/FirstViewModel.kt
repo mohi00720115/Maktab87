@@ -31,7 +31,7 @@ class FirstViewModel : ViewModel() {
         false, false, true, true, true, false, true, false
     )
 
-    val list = mutableListOf("", "", "", "", "", "", "", "")
+    val userAnswerList = mutableListOf("", "", "", "", "", "", "", "")
 
     private var scoreList = booleanArrayOf(
         false, false, false, false, false, false, false, false
