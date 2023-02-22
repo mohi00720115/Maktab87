@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.commit {
             setReorderingAllowed(true)
             add<FirstFragment>(R.id.container_view)
-            addToBackStack(null)
+//            addToBackStack(null)
         }
 
     }
