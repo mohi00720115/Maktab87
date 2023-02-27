@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.example.tictoktoe2.databinding.FragmentFirstBinding
 
@@ -15,6 +16,7 @@ import com.example.tictoktoe2.databinding.FragmentFirstBinding
 class FirstFragment : Fragment(R.layout.fragment_first) {
     private lateinit var binding: FragmentFirstBinding
     private val viewModel: FirstViewModel by viewModels()
+//    private val viewModel: FirstViewModel by activityViewModels()
 
     private lateinit var tv: TextView
     private lateinit var scoreList: MutableList<Int>
@@ -32,9 +34,6 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
             binding.btn7, binding.btn8, binding.btn9
         )
 
-//        val tvPlayers = viewModel.turnCounter
-//        viewModel.turnCounter = tvPlayers!!
-//        tv.text = "Player$tvPlayers's turn"
 
         fun disables() {
             for (i in btnList) i.isClickable = false
@@ -82,7 +81,6 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
             viewModel.reset()
             disablesTrue()
             emptyString()
-//            tv.text = "Player$tvPlayers's turn"
         }
 
 

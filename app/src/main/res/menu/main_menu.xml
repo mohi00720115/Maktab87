@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/four_in_row"
+        android:id="@+id/secondFragment"
+        android:title="4 In Row" />
+
+    <item
+        android:icon="@drawable/tic"
+        android:id="@+id/firstFragment"
+        android:title="TicTokToe" />
+</menu>

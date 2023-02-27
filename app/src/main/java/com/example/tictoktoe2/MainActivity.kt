@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.tictoktoe2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,24 +22,41 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.btnTikTokToe.setOnClickListener {
-            supportFragmentManager.commit {
-                setReorderingAllowed(true)
-                replace<FirstFragment>(R.id.container_view)
-//                addToBackStack(null)
-                lockDeviceRotation(true)
-            }
+//        val navHostFragment =
+//            supportFragmentManager.findFragmentById(R.id.container_view) as NavHostFragment
+//        val navController = navHostFragment.navController
+//        binding.bottomNavigation.setupWithNavController(navController)
 
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            replace<EmptyFragment>(R.id.container_view)
+//                addToBackStack(null)
+            lockDeviceRotation(true)
         }
 
-        binding.newGame.setOnClickListener {
-            supportFragmentManager.commit {
-                setReorderingAllowed(true)
-                replace<SecondFragment>(R.id.container_view)
-                addToBackStack(null)
-                lockDeviceRotation(true)
-            }
 
+        binding.bottomNavigation.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.firstFragment -> {
+                    supportFragmentManager.commit {
+                        setReorderingAllowed(true)
+                        replace<FirstFragment>(R.id.container_view)
+//                addToBackStack(null)
+                        lockDeviceRotation(true)
+                    }
+//                    navController.navigate(R.id.firstFragment)
+                }
+                R.id.secondFragment -> {
+                    supportFragmentManager.commit {
+                        setReorderingAllowed(true)
+                        replace<SecondFragment>(R.id.container_view)
+//                addToBackStack(null)
+                        lockDeviceRotation(true)
+                    }
+//                    navController.navigate(R.id.secondFragment)
+                }
+            }
+            true
         }
 
     }
