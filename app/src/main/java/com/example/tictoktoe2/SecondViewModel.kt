@@ -43,23 +43,26 @@ class SecondViewModel : ViewModel() {
     }
 
     //تغییر بازیکن بصورت یک به یک
-    fun changeStatus() {
-        statusPlayer = if (statusPlayer == StatusPlayerFourRow.PLAYER1) {
-            player.value = namePlayerTwo
-            StatusPlayerFourRow.PLAYER2
-        } else {
-            player.value = namePlayerOne
-            StatusPlayerFourRow.PLAYER1
+    fun changePlayers() {
+        statusPlayer = when (statusPlayer) {
+            StatusPlayerFourRow.PLAYER1 -> {
+                player.value = namePlayerTwo
+                StatusPlayerFourRow.PLAYER2
+            }
+            else -> {
+                player.value = namePlayerOne
+                StatusPlayerFourRow.PLAYER1
+            }
         }
     }
 
     //نمایش میده جایی که کاربر کلیک می کنه مستقیم میره پایین ترینو پر می کنه
-    fun choosePlace(place: Int): ArrayList<String> {
+    fun bottomItemClick(place: Int): ArrayList<String> {
         var location = place % rowAndColumn + ((rowAndColumn - 1) * rowAndColumn)
         //فور کی زنیم که خونه های پر رو پر نکنه یکی بره بعدیش
         for (index in 0 until rowAndColumn) {
             if (listPlace[location] == "") {
-                listPlace[location] = choose(location)      //اسم بازیکنو می ریزه توش
+                listPlace[location] = enterNamePlayerInButtons(location)      //اسم بازیکنو می ریزه توش
                 break
             } else location -= rowAndColumn
         }
@@ -67,28 +70,33 @@ class SecondViewModel : ViewModel() {
     }
 
     //قراردادن اسم بازیکنی که روی دکمه کلیک شده و قراره پر بشه
-    fun choose(place: Int): String {
-        return if (statusPlayer == StatusPlayerFourRow.PLAYER1) {
-            changeStatus()
-            listChoosePlayerOne.add(place)
-            if (check(listChoosePlayerOne)) {
-                status[0] = true
-                player.value = "$namePlayerOne Win"
+    fun enterNamePlayerInButtons(place: Int): String {
+        return when (statusPlayer) {
+            StatusPlayerFourRow.PLAYER1 -> {
+                changePlayers()
+                listChoosePlayerOne.add(place)
+                when {
+                    winsCheck(listChoosePlayerOne) -> {
+                        status[0] = true
+                        player.value = "$namePlayerOne Win"
+                    }
+                }
+                namePlayerOne
             }
-            namePlayerOne
-        } else {
-            changeStatus()
-            listChoosePlayerTwo.add(place)
-            if (check(listChoosePlayerTwo)) {
-                status[0] = true
-                player.value = "$namePlayerTwo Win"
+            else -> {
+                changePlayers()
+                listChoosePlayerTwo.add(place)
+                if (winsCheck(listChoosePlayerTwo)) {
+                    status[0] = true
+                    player.value = "$namePlayerTwo Win"
+                }
+                namePlayerTwo
             }
-            namePlayerTwo
         }
     }
 
     //حالات مختلف برنده شدنو چک می کنه
-    fun check(listChoose: MutableSet<Int>): Boolean {
+    fun winsCheck(listChoose: MutableSet<Int>): Boolean {
         return when {
             winVertical(listChoose) -> {
                 true
@@ -96,10 +104,10 @@ class SecondViewModel : ViewModel() {
             winHorizontal(listChoose) -> {
                 true
             }
-            winDiagonal(listChoose) -> {
+            winDiagonalLtoR(listChoose) -> {
                 true
             }
-            else -> winDiagonalRevers(listChoose)
+            else -> winDiagonalRtoL(listChoose)
         }
     }
 
@@ -126,7 +134,7 @@ class SecondViewModel : ViewModel() {
     }
 
     //حالت برد در حالت افقی (کنارهم)
-    fun winHorizontal(listChoose: MutableSet<Int>): Boolean {
+    private fun winHorizontal(listChoose: MutableSet<Int>): Boolean {
         for (i in 0 until rowAndColumn * rowAndColumn step 5) {
             var count = 0
             for (j in i..i + 4) {
@@ -147,7 +155,7 @@ class SecondViewModel : ViewModel() {
     }
 
     //حالات برد بصورت مورب چپ به راست
-    fun winDiagonal(listChoose: MutableSet<Int>): Boolean {
+    private fun winDiagonalLtoR(listChoose: MutableSet<Int>): Boolean {
         for (i in 0 until rowAndColumn * rowAndColumn) {
             var count = 0
             var step = rowAndColumn
@@ -181,7 +189,7 @@ class SecondViewModel : ViewModel() {
     }
 
     //حالات برد بصورت مورب راست به چپ
-    fun winDiagonalRevers(listChoose: MutableSet<Int>): Boolean {
+    private fun winDiagonalRtoL(listChoose: MutableSet<Int>): Boolean {
         for (i in 0 until rowAndColumn * rowAndColumn) {
             var count = 0
             var step = rowAndColumn

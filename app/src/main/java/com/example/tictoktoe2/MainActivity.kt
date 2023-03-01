@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             lockDeviceRotation(true)
         }
 
-
         binding.bottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.firstFragment -> {

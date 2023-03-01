@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.example.tictoktoe2.databinding.FragmentFirstBinding
-
+import com.google.android.material.snackbar.Snackbar
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
     private lateinit var binding: FragmentFirstBinding
@@ -58,14 +58,20 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
             btns.isClickable = false
             if (viewModel.statusA) {
                 binding.textView.text = Players.PLAYER2WIN.toString()
+                val snackbar = Snackbar.make(view, "${Players.PLAYER2WIN}", Snackbar.LENGTH_LONG)
+                snackbar.show()
                 disables()
             }
             if (viewModel.statusB) {
                 binding.textView.text = Players.PLAYER1WIN.toString()
+                val snackbar = Snackbar.make(view, "${Players.PLAYER1WIN}", Snackbar.LENGTH_LONG)
+                snackbar.show()
                 disables()
             }
             if (!viewModel.status && !viewModel.statusA && !viewModel.statusB) {
                 binding.textView.text = WinOrLose.DRAW.toString()
+                val snackbar = Snackbar.make(view, "${WinOrLose.DRAW}", Snackbar.LENGTH_LONG)
+                snackbar.show()
                 disables()
             }
 

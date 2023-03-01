@@ -10,11 +10,12 @@ enum class Players {
     PLAYER1WIN, PLAYER2WIN
 }
 
-class FirstViewModel: ViewModel() {
+class FirstViewModel : ViewModel() {
 
     var select = 0
     var status = true
     val player1 = mutableListOf<Int>()
+
     //    val player1 = MutableLiveData<Int>()
     val player2 = mutableListOf<Int>()
 //    val player2 = MutableLiveData<Int>()
@@ -28,7 +29,6 @@ class FirstViewModel: ViewModel() {
         listOf(1, 5, 9), listOf(3, 5, 7)
     )
     var turnCounter = 0
-
 
     fun reset() {
         this.status = true
