@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTokToe2">
+        <!-- این کد خط 15 میاد با چرخش صفحه اسکرین دیتا ها رو حفظ می کنه و نمی ذاره بپره -->
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

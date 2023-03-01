@@ -11,15 +11,18 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.example.tictoktoe2.databinding.FragmentFirstBinding
-
+import com.google.android.material.snackbar.Snackbar
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
     private lateinit var binding: FragmentFirstBinding
     private val viewModel: FirstViewModel by viewModels()
-//    private val viewModel: FirstViewModel by activityViewModels()
+    //    private val viewModel: FirstViewModel by activityViewModels()
+    private val viewModelSettings: SettingViewModel by activityViewModels()
 
     private lateinit var tv: TextView
     private lateinit var scoreList: MutableList<Int>
+    private var scorePlayer1 = 0
+    private var scorePlayer2 = 0
     private lateinit var btnList: List<Button>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -57,15 +60,35 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
             viewModel.statusB = viewModel.checkWin(viewModel.player2)
             btns.isClickable = false
             if (viewModel.statusA) {
-                binding.textView.text = Players.PLAYER2WIN.toString()
+                scorePlayer1++
+//                binding.textView.text = Players.PLAYER2WIN.toString()
+                binding.textView.text = "${viewModelSettings.playerNameTwo} Win Your Score: $scorePlayer1"
+//                val snackbar = Snackbar.make(view, "${Players.PLAYER2WIN}", Snackbar.LENGTH_LONG)
+                val snackbar2 = Snackbar.make(
+                    view,
+                    "${viewModelSettings.playerNameTwo} Win",
+                    Snackbar.LENGTH_LONG
+                )
+                snackbar2.show()
                 disables()
             }
             if (viewModel.statusB) {
-                binding.textView.text = Players.PLAYER1WIN.toString()
+                scorePlayer2++
+//                binding.textView.text = Players.PLAYER1WIN.toString()
+                binding.textView.text = "${viewModelSettings.playerNameOne} Win Your Score: $scorePlayer2"
+//                val snackbar = Snackbar.make(view, "${Players.PLAYER1WIN}", Snackbar.LENGTH_LONG)
+                val snackbar2 = Snackbar.make(
+                    view,
+                    "${viewModelSettings.playerNameOne} Win",
+                    Snackbar.LENGTH_LONG
+                )
+                snackbar2.show()
                 disables()
             }
             if (!viewModel.status && !viewModel.statusA && !viewModel.statusB) {
                 binding.textView.text = WinOrLose.DRAW.toString()
+                val snackbar = Snackbar.make(view, "${WinOrLose.DRAW}", Snackbar.LENGTH_LONG)
+                snackbar.show()
                 disables()
             }
 

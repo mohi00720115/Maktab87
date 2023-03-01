@@ -31,7 +31,7 @@ class RecyclerForInRow(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.btnRecycler.text = itemList[position]
         holder.btnRecycler.setOnClickListener {
-            OnClickInterface.setOnClickListener(position)
+            OnClickInterface.setOnClick(position)
             notifyDataSetChanged()      //ریسایکلرو از اول میسازه
         }
         if (status[0]) {

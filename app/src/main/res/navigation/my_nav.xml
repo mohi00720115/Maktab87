@@ -24,5 +24,14 @@
         <action
             android:id="@+id/action_emptyFragment_to_secondFragment"
             app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_emptyFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.tictoktoe2.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
