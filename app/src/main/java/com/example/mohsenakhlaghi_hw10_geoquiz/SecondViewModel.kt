@@ -1,8 +1,5 @@
 package com.example.mohsenakhlaghi_hw10_geoquiz
 
-import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 

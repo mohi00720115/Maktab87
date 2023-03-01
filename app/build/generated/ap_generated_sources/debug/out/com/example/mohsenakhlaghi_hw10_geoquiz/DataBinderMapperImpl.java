@@ -8,8 +8,8 @@ import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.mohsenakhlaghi_hw10_geoquiz.databinding.ActivityCheatBindingImpl;
 import com.example.mohsenakhlaghi_hw10_geoquiz.databinding.ActivityMainBindingImpl;
-import com.example.mohsenakhlaghi_hw10_geoquiz.databinding.FragmentFirstBindingImpl;
-import com.example.mohsenakhlaghi_hw10_geoquiz.databinding.FragmentSecondBindingImpl;
+import com.example.mohsenakhlaghi_hw10_geoquiz.databinding.FragmentCheatBindingImpl;
+import com.example.mohsenakhlaghi_hw10_geoquiz.databinding.FragmentGameBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -25,17 +25,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ACTIVITYMAIN = 2;
 
-  private static final int LAYOUT_FRAGMENTFIRST = 3;
+  private static final int LAYOUT_FRAGMENTCHEAT = 3;
 
-  private static final int LAYOUT_FRAGMENTSECOND = 4;
+  private static final int LAYOUT_FRAGMENTGAME = 4;
 
   private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.activity_cheat, LAYOUT_ACTIVITYCHEAT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_first, LAYOUT_FRAGMENTFIRST);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_second, LAYOUT_FRAGMENTSECOND);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_cheat, LAYOUT_FRAGMENTCHEAT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_game, LAYOUT_FRAGMENTGAME);
   }
 
   @Override
@@ -59,17 +59,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
         }
-        case  LAYOUT_FRAGMENTFIRST: {
-          if ("layout/fragment_first_0".equals(tag)) {
-            return new FragmentFirstBindingImpl(component, view);
+        case  LAYOUT_FRAGMENTCHEAT: {
+          if ("layout/fragment_cheat_0".equals(tag)) {
+            return new FragmentCheatBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for fragment_first is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for fragment_cheat is invalid. Received: " + tag);
         }
-        case  LAYOUT_FRAGMENTSECOND: {
-          if ("layout/fragment_second_0".equals(tag)) {
-            return new FragmentSecondBindingImpl(component, view);
+        case  LAYOUT_FRAGMENTGAME: {
+          if ("layout/fragment_game_0".equals(tag)) {
+            return new FragmentGameBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for fragment_second is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for fragment_game is invalid. Received: " + tag);
         }
       }
     }
@@ -131,8 +131,8 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     static {
       sKeys.put("layout/activity_cheat_0", com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.activity_cheat);
       sKeys.put("layout/activity_main_0", com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.activity_main);
-      sKeys.put("layout/fragment_first_0", com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_first);
-      sKeys.put("layout/fragment_second_0", com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_second);
+      sKeys.put("layout/fragment_cheat_0", com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_cheat);
+      sKeys.put("layout/fragment_game_0", com.example.mohsenakhlaghi_hw10_geoquiz.R.layout.fragment_game);
     }
   }
 }
