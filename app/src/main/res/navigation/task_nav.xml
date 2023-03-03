@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_nav"
+    app:startDestination="@id/createTaskFragment">
+
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.example.quizandroid.activity2.todo.TodoFragment"
+        android:label="fragment_todo"
+        tools:layout="@layout/fragment_todo" />
+    <fragment
+        android:id="@+id/doingFragment"
+        android:name="com.example.quizandroid.activity2.doing.DoingFragment"
+        android:label="fragment_doing"
+        tools:layout="@layout/fragment_doing" />
+    <fragment
+        android:id="@+id/createTaskFragment"
+        android:name="com.example.quizandroid.activity2.task.TaskFragment"
+        android:label="fragment_create_task"
+        tools:layout="@layout/fragment_create_task" />
+    <fragment
+        android:id="@+id/doneFragment"
+        android:name="com.example.quizandroid.activity2.done.DoneFragment"
+        android:label="fragment_done"
+        tools:layout="@layout/fragment_done" />
+</navigation>

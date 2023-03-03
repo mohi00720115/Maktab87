@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/createTaskFragment"
+        android:icon="@drawable/task"
+        android:title="Task Management" />
+    <item
+        android:id="@+id/todoFragment"
+        android:icon="@drawable/todo"
+        android:title="ToDo" />
+    <item
+        android:id="@+id/doingFragment"
+        android:icon="@drawable/doing"
+        android:title="Doing" />
+    <item
+        android:id="@+id/doneFragment"
+        android:icon="@drawable/done"
+        android:title="Done" />
+</menu>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateTaskFragment">
+
+    <data>
+        <variable
+            name="viewModelTask"
+            type="com.example.quizandroid.activity2.task.TaskViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editText_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:ems="10"
+            android:hint="Task Name"
+            android:inputType="textPersonName"
+            android:text="@={viewModelTask.taskName}"
+            app:layout_constraintBottom_toTopOf="@+id/editText_subject"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="189dp"
+            android:ems="10"
+            android:hint="Subject"
+            android:inputType="textPersonName"
+            android:text="@={viewModelTask.taskSubject}"
+            app:layout_constraintEnd_toEndOf="@+id/editText_task"
+            app:layout_constraintStart_toStartOf="@+id/editText_task"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editText_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:text="@={viewModelTask.taskDate}"
+            app:layout_constraintEnd_toEndOf="@+id/editText_subject"
+            app:layout_constraintStart_toStartOf="@+id/editText_subject"
+            app:layout_constraintTop_toBottomOf="@+id/editText_subject"
+            tools:ignore="MissingConstraints" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/btn_click"
+            app:layout_constraintStart_toStartOf="@+id/btn_click"
+            app:layout_constraintTop_toBottomOf="@+id/editText_date"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/radio_todo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="ToDo" />
+
+            <RadioButton
+                android:id="@+id/radio_doing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Doing" />
+
+            <RadioButton
+                android:id="@+id/radio_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Done" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Tack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
