@@ -27,7 +27,6 @@ class TaskFragment : Fragment(R.layout.fragment_task) {
 //        binding.lifecycleOwner = this
 //        binding.viewModelTask = vmTask
 
-//        nameExtra = arguments?.getString("NAME_EXTRA").toString()
         try {
             nameExtra = arguments?.getString("NAME_EXTRA").toString()
             numberOfTask = arguments?.getInt("NUMBER_OF_TASK")!!

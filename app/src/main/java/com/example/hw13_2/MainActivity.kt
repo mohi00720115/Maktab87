@@ -1,10 +1,8 @@
 package com.example.hw13_2
 
-import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
@@ -27,15 +25,16 @@ class MainActivity : AppCompatActivity() {
         binding.viewModel = vmMain
 
         binding.btnLogin.setOnClickListener {
-//            val taskName = binding.editTextName.text.toString()
-//            val taskNumber = binding.editTextTaskNumber.text.toString()
-            Toast.makeText(this, vmMain.check(), Toast.LENGTH_SHORT).show()
+            if (binding.editTextTaskNumber.text.toString().toInt() > 40) {
+                Toast.makeText(this, "تعداد کار ها باید کمتر از 40 باشد", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else {
+                Toast.makeText(this, vmMain.check(), Toast.LENGTH_SHORT).show()
+            }
             if (vmMain.status) {
                 val intent = Intent(this, TaskActivity::class.java)
                 intent.putExtra(NAME_KEY, vmMain.name.value.toString())
-                Log.e(TAG, "onCreate: ${vmMain.name.value}")
-                intent.putExtra(TASK_NUM_KEY, vmMain.number.value?.toInt())
-                Log.e(TAG, "onCreate: ${vmMain.number.value}")
+                intent.putExtra(TASK_NUM_KEY, vmMain.numberOfTask.value?.toInt())
                 startActivity(intent)
                 Toast.makeText(this, vmMain.check(), Toast.LENGTH_SHORT).show()
             }

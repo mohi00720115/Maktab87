@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat.setBackgroundTintList
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hw13_2.R
 
-class RecyclerTask(val listItem: ArrayList<TaskData>) :
+class RecyclerTask(private val listItem: ArrayList<TaskData>) :
     RecyclerView.Adapter<RecyclerTask.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -31,6 +31,9 @@ class RecyclerTask(val listItem: ArrayList<TaskData>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
+        /**
+         * با شرط چک می کنیم میگیم اگه آیتم های ریسایکلرویو زوج بود، رنگ بک گراندشون بشه آبی فیروزه ای و اگه فرد بود بشه بنفش
+         */
         holder.apply {
             if (position % 2 == 0) {
                 cardView.setBackgroundResource(R.color.teal_200)

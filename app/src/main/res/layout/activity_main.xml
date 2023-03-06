@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="31dp"
             android:ems="10"
-            android:text="@={viewModel.number}"
+            android:text="@={viewModel.numberOfTask}"
             android:hint="تعداد کار خود را وارد کنید"
             android:inputType="number"
             app:layout_constraintStart_toStartOf="@+id/editText_name"
