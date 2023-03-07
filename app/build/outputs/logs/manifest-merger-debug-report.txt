@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.databinding:databinding-adapters:7.1.2] C:\Users\user\.gradle\caches\transforms-3\f89851f987466693d5092163b4df81d2\transformed\databinding-adapters-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-ktx:7.1.2] C:\Users\user\.gradle\caches\transforms-3\eaa49a5bfd09c53f403b9375f92a4821\transformed\databinding-ktx-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:7.1.2] C:\Users\user\.gradle\caches\transforms-3\6ff0a47cb92f5f225fd76146f7fbe343\transformed\databinding-runtime-7.1.2\AndroidManifest.xml:17:1-24:12
@@ -72,27 +72,27 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\user\.gradle\caches\transforms-3\7a5c8d21eb2708067e5e0b809419f0db\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\user\.gradle\caches\transforms-3\4a1c639684436f022d6cb6c073454e8c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\user\.gradle\caches\transforms-3\a7931954c7cd193da7ec3870722fe3f7\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:4:5-54
 		INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:6:5-29:19
+ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:6:5-24:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\user\.gradle\caches\transforms-3\d1789baf0be50ad848a09fabf2c191b2\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\user\.gradle\caches\transforms-3\d1789baf0be50ad848a09fabf2c191b2\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\user\.gradle\caches\transforms-3\949fe55fb7d71f58be893ba6d28e0aca\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -125,36 +125,24 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\user\.gradle\cache
 		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
 		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:12:9-65
-activity#com.example.mohsenakhlaghi_hw10_geoquiz.GeoQuiz
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:13:9-16:45
-	android:exported
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:15:13-37
-	tools:ignore
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:16:13-42
-	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:14:13-36
-activity#com.example.mohsenakhlaghi_hw10_geoquiz.CheatActivity
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:17:9-19:40
-	android:exported
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:19:13-37
-	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:18:13-42
 activity#com.example.mohsenakhlaghi_hw10_geoquiz.MainActivity
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:20:9-28:20
+ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:14:9-23:20
 	android:exported
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:17:13-36
+	android:configChanges
+		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:16:13-72
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\user\AndroidStudioProjects\Others\MohsenAkhlaghi_HW10_GeoQuiz\app\src\main\AndroidManifest.xml

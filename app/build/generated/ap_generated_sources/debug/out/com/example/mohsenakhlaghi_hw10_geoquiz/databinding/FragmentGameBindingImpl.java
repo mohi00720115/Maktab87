@@ -14,11 +14,11 @@ public class FragmentGameBindingImpl extends FragmentGameBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.btn_next, 2);
-        sViewsWithIds.put(R.id.btn_prev, 3);
-        sViewsWithIds.put(R.id.btn_cheat, 4);
-        sViewsWithIds.put(R.id.btn_false, 5);
-        sViewsWithIds.put(R.id.btn_true, 6);
+        sViewsWithIds.put(R.id.btn_prev, 2);
+        sViewsWithIds.put(R.id.btn_cheat, 3);
+        sViewsWithIds.put(R.id.btn_false, 4);
+        sViewsWithIds.put(R.id.btn_true, 5);
+        sViewsWithIds.put(R.id.btn_next, 6);
     }
     // views
     @NonNull
@@ -33,11 +33,11 @@ public class FragmentGameBindingImpl extends FragmentGameBinding  {
     }
     private FragmentGameBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 1
-            , (android.widget.Button) bindings[4]
-            , (android.widget.Button) bindings[5]
-            , (android.widget.Button) bindings[2]
             , (android.widget.Button) bindings[3]
+            , (android.widget.Button) bindings[4]
             , (android.widget.Button) bindings[6]
+            , (android.widget.Button) bindings[2]
+            , (android.widget.Button) bindings[5]
             , (android.widget.TextView) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
